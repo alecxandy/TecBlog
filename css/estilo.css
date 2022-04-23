@@ -9,7 +9,14 @@ body{
 	font-family: "Trebuchet MS",Helvetica, sans-serif;
 	background: #e6e6e6 ;
 }
-
+h2{
+	color: #f7b600;
+}
+h3{
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
 
 /*  Layout  */
 #area-cabecalho{
@@ -25,18 +32,18 @@ body{
 	background: white;	
 	width: 920px;
 	margin: 0 auto;/*margin=auto: centraliza os componetes*/
+	padding: 15px;
 }
 
-#area-lateral{
-	background-color: orange;
-}
 #area-postagens{
 	width: 660px; 
 	float: left;
+	
 }
-#area-lateral{
+#area-lateral{ 
 	width: 240px;
 	float: right;
+	margin-bottom: 20px;
 }
 .postagem{
 	padding: 20px;
@@ -51,7 +58,14 @@ body{
 	background: #ccc;
 }
 
+.texto-lateral{
+	font-size: 0.8em;
+	padding:5px ;
 
+}
+.conteudo-lateral{
+	border-bottom: 1px dotted #CCC;
+}
 
 /* Formatação do Menu */
 a{
@@ -73,15 +87,38 @@ a:hover{
 a:active{
 	color: #fff;
 }
-
-
+.postagem a:visited , .postagem a:link{
+	color: orange;
+}
 
 /* Fromatação em geral */
+
+#area-postagens a:link, #area-postagens a:visited{
+	color: #orange;
+}
+#area-lateral a:link, #area-lateral a:visited{
+	color: orange;
+}
+#area-lateral a:hover{
+	color: #f7b600;
+}
+
 h1{
 	color: #4e4e4e;
 	font-size: 2.5em;
+} 
+h2{
+	color:#f7b600 ;
 }
 
 .branco{
 	color:white;
+}
+
+.data-postagem{
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
